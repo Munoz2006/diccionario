@@ -1,0 +1,110 @@
+:root{
+    --main-color: #572364;
+}
+@font-face {
+    font-family: 'font-country';
+    src: url('../assets/fonts/Anton/Anton-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'font-country', 'Arial Narraw', Arial, sans-serif;
+    color: #fff;
+}
+main{
+    width: 100vw;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    gap: 2rem;
+}
+header{
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(45deg, #572364, #bc6ff1, #bc6ff1);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+}
+section{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 1rem;
+    border-style: groove;
+    border-color: #bc6ff1 ;
+    padding: 1rem;
+    
+}
+#container{
+   width: 50vw;
+   height: 150vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 10px;
+}
+.div-P{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.50rem;
+}
+.radio-btn-f{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+input{
+    background-color: black;
+    border-width: 3px;
+    border-radius: 5px;  
+    border-color: #bc6ff1;
+    color: #fff;
+}
+select {  
+    width: 100px;  
+    padding: 3px;  
+    border: 2px solid #bc6ff1;  
+    border-radius: 5px;  
+    background-color: black;  
+    color: #fff;   
+    font-size: 16px;   
+}  
+
+select:focus {  
+    border-color: #bc6ff1;   
+    outline: none; 
+}
+button{
+    width: 9rem;
+    height: 1.5rem;
+    background-color: black;
+    color: #fff;
+    border-color: #bc6ff1;
+    border-radius: 2rem;
+
+}
+

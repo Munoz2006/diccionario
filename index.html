@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diccionario</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>DICCIONARIO</header>
+    <main>
+        <div class="div-P">
+            <section>
+                <div>
+                    <label for="">Excribe una palabra</label>
+                    <input type="text" id="text">
+                    <label type="text">Español a Ingles</label>
+                    <input type="radio" name="lenguaje" id="Spanish_english">
+                    <label type="text">Ingles a Español</label>
+                    <input type="radio" name="lenguaje" id="English_spanish">
+                </div>
+                <div>
+                <select name="" id="A-Z">
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                </select>
+                </div>
+                <div>
+                    <label for="">Frutas</label>
+                    <input type="radio" name="filtrar" id="filter_fruits">
+                    <label for="">Colores</label>
+                    <input type="radio" name="filtrar" id="filter_colors">
+                    <label for="">Descripciones Fisicas</label>
+                    <input type="radio" name="filtrar" id="filter_physical_descriptions">
+                    <label for="">Comidas</label>
+                    <input type="radio" name="filtrar" id="filter_foods">
+                    <label for="">Habilidades</label>
+                    <input type="radio" name="filtrar" id="filter_skills">
+                </div>
+                <button id="translate" class="">Traducir</button>
+            </section>
+            <section>
+                <form id="addWordForm">  
+                    <label for="spanish">Español:</label>  
+                    <input type="text" id="spanish" required>  
+                    
+                    <label for="english">Inglés:</label>  
+                    <input type="text" id="english" required>  
+                    
+                    <label for="description">Descripción:</label>  
+                    <input type="text" id="description" required>  
+                
+                    <div class="radio-bnt-f">  
+                        <label for="A_fruits">Frutas</label>  
+                        <input type="radio" name="category" id="A_fruits" value="fruits" required>  
+                        
+                        <label for="A_colors">Colores</label>  
+                        <input type="radio" name="category" id="A_colors" value="colors">  
+                        
+                        <label for="A_physical_descriptions">Descripciones Físicas</label>  
+                        <input type="radio" name="category" id="A_physical_descriptions" value="physical_descriptions">   
+                        
+                        <label for="A_skills">Habilidades</label>  
+                        <input type="radio" name="category" id="A_skills" value="skills">  
+                    </div>  
+                    
+                    <button type="submit" id="btn-add">Agregar</button>  
+                </form>
+            </section>
+        </div>
+        <section id="container">
+        </section>
+        <footer></footer>   
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/dictionary.js"></script>
+</body>
+</html>
